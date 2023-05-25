@@ -81,6 +81,10 @@ form input:focus{
     outline: 2px solid var(--cl-outiline);
 }
 
+.input-error {
+    border: 1px solid red;
+}
+
 form button{
     width: 100%;
     margin-top: 3.2rem;
