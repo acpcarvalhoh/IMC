@@ -104,6 +104,11 @@ form button:hover{
 }
 
 /* MODAL */
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+
 .modal-wrapper{
     position: absolute;
     inset: 0;
@@ -130,4 +135,29 @@ form button:hover{
 
 .modal button:hover{
     scale: 1.2;
+}
+
+.alert-error.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.alert-error{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 0;
+    color: #fff;
+    font-weight: 700;
+    line-height: 2rem;
+    background: var(--tt-error);
+    text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform .5s;
 }
