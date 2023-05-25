@@ -14,10 +14,10 @@ closeM.addEventListener('click', closeModal)
 /* Funções */
 function sbtForm(event){
     event.preventDefault()
-    let IMC =  IMC(weight.value, height.value)
-    let IMCmessage = modal.querySelector('span')
+    const imc =  IMC(weight.value, height.value)
+    const IMCmessage = modal.querySelector('span')
 
-    IMCmessage.innerHTML = `Seu IMC é de ${IMC}`
+    IMCmessage.innerHTML = `Seu IMC é de ${imc}`
 
     toogleScreen()
 }
