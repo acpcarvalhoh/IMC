@@ -1,7 +1,7 @@
 /* Variáveis */
 const form = document.querySelector('form')
-const weight = document.querySelector('#weight')
-const height = document.querySelector('#height')
+let weight = document.querySelector('#weight')
+let height = document.querySelector('#height')
 const modal = document.querySelector('.modal-wrapper')
 const closeM = document.querySelector('.close')
 
@@ -28,7 +28,8 @@ function IMC(weight, height) {
 
 function closeModal(){
    toogleScreen()
-   
+   weight.value = ''
+   height.value = ''
 }
 
 function toogleScreen(){
